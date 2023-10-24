@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-4 mb-4 mb-lg-0">
                 <a class="footer-brand mr-lg-5 d-flex" href="/">
-                    <img src="{{asset('img/backend-logo.jpg')}}" height="35" class="mr-3" alt="Footer logo">
+                    <img src="{{ asset('img/backend-logo.png') }}" height="45" class="mr-3" alt="Footer logo">
                 </a>
                 <p class="my-4">
                     {!! setting('meta_description') !!}
@@ -35,32 +35,34 @@
                         <a target="_blank" href="#">License</a>
                     </li>
                     @guest
-                    @if(user_registration())
-                    <li>
-                        <a href="{{ route('register') }}">Register</a>
-                    </li>
-                    @endif
-                    <li>
-                        <a href="{{ route('login') }}">Login</a>
-                    </li>
+                        @if (user_registration())
+                            <li>
+                                <a href="{{ route('register') }}">Register</a>
+                            </li>
+                        @endif
+                        <li>
+                            <a href="{{ route('login') }}">Login</a>
+                        </li>
                     @else
-                    <li>
-                        <a href="#">{{ Auth::user()->name }}</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            Logout
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </li>
+                        <li>
+                            <a href="#">{{ Auth::user()->name }}</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
                     @endguest
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <h6>Subscribe</h6>
-                <p class="font-small">The latest Impact news, articles, and resources, sent straight to your inbox every month.</p>
+                <p class="font-small">The latest Impact news, articles, and resources, sent straight to your inbox every
+                    month.</p>
                 <form action="#">
                     <div class="form-row">
                         <div class="col-8">
@@ -71,7 +73,9 @@
                         </div>
                     </div>
                 </form>
-                <small class="mt-2 form-text">We’ll never share your details. See our <a href="{{route('frontend.privacy')}}" class="font-weight-bold text-underline">Privacy Policy</a></small>
+                <small class="mt-2 form-text">We’ll never share your details. See our <a
+                        href="{{ route('frontend.privacy') }}" class="font-weight-bold text-underline">Privacy
+                        Policy</a></small>
             </div>
         </div>
 

@@ -33,15 +33,52 @@
                             <span class="fas fa-home mr-2"></span> Home
                         </a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="{{ route('frontend.posts.index') }}" class="nav-link">
                             <span class="fas fa-file-alt mr-1"></span> Posts
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a href="/profile" class="nav-link">
                             <span class="fas fa-sitemap mr-1"></span> Profile Desa
                         </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu"
+                            aria-expanded="false" aria-label="Toggle pages menu item">
+                            <span class="nav-link-inner-text">
+                                <span class="fas fa-file-image mr-1"></span>
+                                Pembuatan Surat
+                            </span>
+                            <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="pages_submenu">
+                            <li>
+                                <a class="dropdown-item" href="/form-berkelakuanbaik">
+                                    <span class="fas fa-file-alt mr-1"></span> Surat Keterangan Berkelakuan Baik
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/form-domisili">
+                                    <span class="fas fa-file-alt mr-1"></span> Surat Keterangan Domisili
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/form-kematian">
+                                    <span class="fas fa-file-alt mr-1"></span> Surat Keterangan Kematian
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/form-pindah">
+                                    <span class="fas fa-file-alt mr-1"></span> Surat Keterangan Pindah
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/form-wargatidakmampu">
+                                    <span class="fas fa-file-alt mr-1"></span> Surat Keterangan Warga Tidak Mampu
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu"

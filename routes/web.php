@@ -14,6 +14,22 @@
 Route::get('/profile', function () {
     return view("frontend/profile");
 });
+Route::get('/form-berkelakuanbaik', function () {
+    return view("frontend/form-berkelakuanbaik");
+});
+Route::get('/form-domisili', function () {
+    return view("frontend/form-domisili");
+});
+Route::get('/form-kematian', function () {
+    return view("frontend/form-kematian");
+});
+Route::get('/form-pindah', function () {
+    return view("frontend/form-pindah");
+});
+Route::get('/form-wargatidakmampu', function () {
+    return view("frontend/form-wargatidakmampu");
+});
+
 Route::group( //start LOCALIZED Routes
     [
         'prefix' => LaravelLocalization::setLocale(),

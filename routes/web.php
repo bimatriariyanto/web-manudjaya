@@ -14,6 +14,9 @@
 Route::get('/profile', function () {
     return view("frontend/profile");
 });
+Route::get('/form-kependudukan', function () {
+    return view("frontend/form-kependudukan");
+});
 Route::get('/form-berkelakuanbaik', function () {
     return view("frontend/form-berkelakuanbaik");
 });

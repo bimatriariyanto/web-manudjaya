@@ -54,6 +54,11 @@
                         </a>
                         <ul class="dropdown-menu" id="pages_submenu">
                             <li>
+                                <a class="dropdown-item" href="/form-kependudukan">
+                                    <span class="fas fa-file-alt mr-1"></span> Formulir Kependudukan
+                                </a>
+                            </li>
+                            <li>
                                 <a class="dropdown-item" href="/form-berkelakuanbaik">
                                     <span class="fas fa-file-alt mr-1"></span> Surat Keterangan Berkelakuan Baik
                                 </a>

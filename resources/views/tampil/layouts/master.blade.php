@@ -126,7 +126,7 @@
 
                                 </li> --}}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">Berita</a>
+                                    <a class="nav-link" href="/galeri">Galeri</a>
 
                                     {{-- </li>
                                 <li class="nav-item dropdown">

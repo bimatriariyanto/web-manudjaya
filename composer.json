@@ -1,7 +1,19 @@
 {
     "name": "omaralalwi/laravel-starter-template",
     "description": "A CMS like modular Laravel starter project.",
-    "keywords": ["framework", "laravel","admin panel", "cms", "starter", "admin", "admin dashboard","laravel-translatable","laravel-starter-template","laravel cms","laravel template"],
+    "keywords": [
+        "framework",
+        "laravel",
+        "admin panel",
+        "cms",
+        "starter",
+        "admin",
+        "admin dashboard",
+        "laravel-translatable",
+        "laravel-starter-template",
+        "laravel cms",
+        "laravel template"
+    ],
     "license": "GPL-3.0-or-later",
     "type": "project",
     "version": "v8.2.1",
@@ -56,7 +68,8 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "auto",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform-check": false
     },
     "extra": {
         "laravel": {
@@ -84,7 +97,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

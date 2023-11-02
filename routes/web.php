@@ -12,26 +12,37 @@
 */
 
 Route::get('/profile', function () {
-    return view("frontend/profile");
+    return view("tampil/profile");
 });
 Route::get('/form-kependudukan', function () {
-    return view("frontend/form-kependudukan");
+    return view("tampil/form-kependudukan");
 });
 Route::get('/form-berkelakuanbaik', function () {
-    return view("frontend/form-berkelakuanbaik");
+    return view("tampil/form-berkelakuanbaik");
 });
 Route::get('/form-domisili', function () {
-    return view("frontend/form-domisili");
+    return view("tampil/form-domisili");
 });
 Route::get('/form-kematian', function () {
-    return view("frontend/form-kematian");
+    return view("tampil/form-kematian");
 });
 Route::get('/form-pindah', function () {
-    return view("frontend/form-pindah");
+    return view("tampil/form-pindah");
 });
 Route::get('/form-wargatidakmampu', function () {
-    return view("frontend/form-wargatidakmampu");
+    return view("tampil/form-wargatidakmampu");
 });
+
+Route::get('/tentang-desa', function () {
+    return view("tampil/profil");
+});
+Route::get('/galeri', function () {
+    return view("tampil/galeri");
+});
+
+Route::get('/', 'TampilController@index')->name('index');
+Route::get('/berita/{slug}', 'TampilController@detailBerita');
+
 
 Route::group( //start LOCALIZED Routes
     [
@@ -43,7 +54,7 @@ Route::group( //start LOCALIZED Routes
     require __DIR__.'/auth.php';
 
     // frontend Routes
-    require __DIR__.'/frontend.php';
+    // require __DIR__.'/frontend.php';
 
         // backend Routes
   require __DIR__.'/backend.php';
